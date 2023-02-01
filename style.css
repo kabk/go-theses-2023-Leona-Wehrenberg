@@ -1,0 +1,79 @@
+.leftside, .rightside {
+
+    height: 50vh;
+    width: 100%;
+
+}
+
+@media screen and (min-width:768px) {
+
+    .leftside, .rightside {
+
+        height: 100vh;
+
+    }
+    
+}
+
+.leftside {
+
+    background-color: whitesmoke;
+}
+
+.rightside {
+
+    background-color: #0A0A0A;
+}
+
+.Title_1 {
+
+    color: blue;
+    font-size: 10vh;
+    margin-left: 15px;
+    font-family: 'Neue Haas Grotesk Text', sans-serif;
+}
+
+.Subtitle {
+
+    color: black;
+    font-size: 40px;
+    margin-left: 15px;
+    font-family: 'Neue Haas Grotesk Text', sans-serif;
+                                                
+}
+
+.Text_1 {
+
+    color: black;
+    font-size: 19px;
+    margin-right: 25px;
+    margin-left: 15px;
+    font-family: 'Neue Haas Grotesk Text', sans-serif;
+                                                
+}
+
+.Text_2 {
+
+    color: gray;
+    font-size: 15px;
+    margin-right: 25px;
+    margin-left: 15px;
+    font-family: 'Neue Haas Grotesk Text', sans-serif;
+}
+
+.Image_1 {
+
+width: 90%;
+margin-right: 25px;
+margin-left: 15px;
+
+}
+
+.Text_3 {
+
+    color: white;
+    font-size: 10px;
+    margin-right: 25px;
+    margin-left: 15px;
+    font-family: 'Neue Haas Grotesk Text', sans-serif;
+}
