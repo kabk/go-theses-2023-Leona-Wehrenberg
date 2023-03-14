@@ -1,79 +1,539 @@
-.leftside, .rightside {
 
-    height: 50vh;
-    width: 100%;
+body {
+    
+background-color: white;
+scroll-behavior: smooth;
+overflow-x: hidden;
 
 }
 
-@media screen and (min-width:768px) {
+@media only screen and (min-width: 800px) {
+.flex-container {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: left;
+    
+  }
+  .flex-left {
+    width: 30%;
+    position: sticky;
+    top: 10%;
+    justify-content: left;
+    align-self: flex-start;
+    background-color: none;
+    margin-left: 2%;
+    padding-right: 5%;
+  }
+  .flex-right {
+    width: 60%;
+    background-color: none;
+  }
 
-    .leftside, .rightside {
+  * {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  h1 {
+    font-size: 50px;
+    margin: 25px 0px 10px 0px;
+  }
 
-        height: 100vh;
+  h2 {
+    font-family: "lores-21-serif", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: blue;
+  }
+  .Title {
+    font-size: 9.2vmax;
+    text-align: left;
+    margin-top: 13%;
+    line-height: 9vmax;
+    margin-bottom: 2%;
+  }
+  .suptitle {
+    font-size: 4.3vmax;
+    margin-top: 12%;
+    line-height: 4.5vmax;
+    margin-bottom: 1%;
+  }
 
+  p {
+    font-size: 1.6vmax;
+    line-height: 2.3vmax;
+    text-align: left;
+    letter-spacing: 1px;
+
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .sourses {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vmax;
+    line-height: 1.5vmax;
+    text-align: left;
+    letter-spacing: 1px;
+    
+  }
+
+  a {
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    font-family: "lores-21-serif", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  a:hover {
+    color: blue;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    
+  }
+  .nav ul {
+    list-style-type: none;
+  }
+  .nav li a {
+    /*display: block;*/
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    line-height: 25px;
+  }
+  li a.active-link {
+    color: blue;
+    font-weight: bold;
+  }
+  /* Change the link color on hover */
+  .nav li a:hover {
+    color: blue;
+  }
+  
+  .text-area.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+ 
+  .text-area {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 350ms;
+
+    text-align: left;
+    text-indent: 0;
+  }
+  .text-part {
+    width: 90%;
+  }
+}
+ 
+  @media only screen and (max-width: 800px) {
+    .flex-container {
+      display: flex;
+      flex-direction: inherit;
+      justify-content: left;
+      
+    }
+    .flex-left {
+      
+    width: 100%;
+    position:absolute;
+    top: 100%;
+    justify-content: left;
+    align-self:baseline;
+    background-color: none;
+    }
+    .flex-right {
+      width: 60%;
+      background-color: none;
+      margin-left: 20%;
+      margin-top: 16%;
+    }
+  
+    * {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin-top: 20%;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    h1 {
+      font-size: 50px;
+      margin: 25px 0px 10px 0px;
+    }
+  
+    h2 {
+      font-family: "lores-21-serif", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: blue;
+    }
+    .Title {
+      font-size: 8vmax;
+      text-align: left;
+      margin-top: 13%;
+      line-height: 65px;
+      margin-bottom: 2%;
+    }
+    .suptitle {
+      font-size: 4.3vmax;
+      margin-top: 12%;
+      line-height: 35px;
+      margin-bottom: 1%;
+    }
+  
+    p {
+      font-size: 1.6vmax;
+      line-height: 2.3vmax;
+      text-align: left;
+      letter-spacing: 1px;
+      
+      font-family: "neue-haas-grotesk-display", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  
+    .sourses {
+      font-family: "neue-haas-grotesk-display", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.3vmax;
+      line-height: 1.8vmax;
+      text-align: left;
+      letter-spacing: 1px;
+      
+    }
+  
+    a {
+      color: blue;
+      text-decoration: none;
+      font-family: "lores-21-serif", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    a:hover {
+      color: blue;
     }
     
+    .nav {
+      display: flex;
+      justify-content: left;
+      list-style: none;
+      
+    }
+    .nav ul {
+      list-style-type: none;
+    }
+    .nav li a {
+      /*display: block;*/
+      color: blue;
+      text-decoration: none;
+      line-height: 25px;
+    }
+    li a.active-link {
+      color: blue;
+      font-weight: bold;
+    }
+    /* Change the link color on hover */
+    .nav li a:hover {
+      color: blue;
+    }
+    
+    .text-area.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+   
+    .text-area {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 100%;
+      
+      transform: translateY(100px);
+      opacity: 0;
+      transition: 350ms;
+  
+      text-align: left;
+      text-indent: 0;
+    }
+    .text-part {
+      width: 90%;
+    }
+  }
+  
+
+.indent {
+  margin-left: 5%;
 }
 
-.leftside {
-
-    background-color: whitesmoke;
+.zitat {
+  color: blue;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
 
-.rightside {
-
-    background-color: #0A0A0A;
+/* This are the Images*/
+.Figure{
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+.Figure14 {
+  width: 50%;
+  height: 50%;
+  margin-top: 5%;
+  float: left;
+  padding: 1%;
+}
+.Figure14::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.bildbeschreibung14 {
+  color: rgb(161, 161, 161);
+  font-size: 1.1vmax;
+  line-height: 1.3vmax;
+  letter-spacing: 1px;
+  float: left;
+  padding: 1%;
+  width: 50%;
+  height: 50%;
+}
+.bildbeschreibung14:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.bildbeschreibung14:hover {
+  color: blue;
+}
+.bildbeschreibung {
+  color: rgb(161, 161, 161);
+  font-size: 1.1vmax;
+  line-height: 1.3vmax;
+  letter-spacing: 1px;
+}
+.bildbeschreibung:hover {
+  color: blue;
 }
 
-.Title_1 {
 
+/* Vorderste menu cover */
+.lineOne {
+    width: 2px;
+    height: 95%;
+    background-color: black;
+    position:fixed;
+    top: 2%;
+    left: 3%;
+    z-index: 1000;
+}
+
+.lineTwo {
+    width: 2px;
+    height: 95%;
+    background-color: black;
+    position:fixed;
+    top: 2%;
+    right: 3%;
+    z-index: 1000;
+}
+
+#Title {
+    position: fixed;
+    font-size: 8vw;
+    text-align: center;
+    margin-top: 5%;
+    line-height: 1;
     color: blue;
-    font-size: 10vh;
-    margin-left: 15px;
-    font-family: 'Neue Haas Grotesk Text', sans-serif;
+    font-family: "kepler-std", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.Subtitle {
+.whitespace {
+    width: 100%;
+    height: 100vw;
+    margin: 0;
+    background-color: white;
+}
 
+/*procent*/
+[data-scrollPercentage] .percentage {
+    width: 0;
+}
+#percentage-value {
+    top: calc(50% - 30px);
+    position: fixed;
+    padding: 0%;
+    right: calc(3% - 30px + 1px);
+    height: 60px;
+    width: 60px;
+    border: 2px solid;
+    border-color: black;
     color: black;
-    font-size: 40px;
-    margin-left: 15px;
-    font-family: 'Neue Haas Grotesk Text', sans-serif;
-                                                
+    background-color: white;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 100%;
+    z-index: 1000;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.Text_1 {
+/* titel am anfang*/
 
-    color: black;
-    font-size: 19px;
-    margin-right: 25px;
-    margin-left: 15px;
-    font-family: 'Neue Haas Grotesk Text', sans-serif;
-                                                
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.Text_2 {
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit:scale-down;
+    pointer-events: none;
+} 
 
-    color: gray;
-    font-size: 15px;
-    margin-right: 25px;
-    margin-left: 15px;
-    font-family: 'Neue Haas Grotesk Text', sans-serif;
+section img#Title {
+  z-index: 1;
 }
 
-.Image_1 {
-
-width: 90%;
-margin-right: 25px;
-margin-left: 15px;
-
+section img#nintendo {
+  z-index: 9;
+  margin-top: -2%;
 }
 
-.Text_3 {
+section img#ps {
+  z-index: 10;
+}
 
-    color: white;
-    font-size: 10px;
-    margin-right: 25px;
-    margin-left: 15px;
-    font-family: 'Neue Haas Grotesk Text', sans-serif;
+section img#computer {
+  z-index: 11;
+}
+
+/* That is for Biblo and figures*/
+
+.container {
+  max-width: 100%;
+  margin: 10px auto;
+}
+
+.ac-label {
+  font-weight: 700;
+  position: relative;
+  padding: .5em 1em;
+  margin-bottom: .5em;
+  display: block;
+  cursor: pointer;
+  background-color: none;
+  border: solid;
+  border-color: black;
+  transition: background-color .15s ease-in-out;
+}
+
+.ac-input:checked + label, .ac-label:hover {
+  background-color: blue;
+  color: white;
+  border-color: blue;
+}
+
+.ac-label:after, .ac-input:checked + .ac-label:after {
+  content: "+";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 2em;
+  height: 100%;
+  line-height: 2.25em;
+  text-align: center;
+  background-color: white;
+  transition: background-color .15s ease-in-out;
+}
+
+.ac-label:hover:after, .ac-input:checked + .ac-label:after {
+  background-color: blue;
+}
+
+.ac-input:checked + .ac-label:after {
+  content: "-";
+}
+
+.ac-input {
+  display: none;
+}
+
+.ac-text {
+  opacity: 0;
+  height: 0;
+  margin-bottom: .5em;
+  transition: opacity .5s ease-in-out;
+  overflow: hidden;
+}
+
+.ac-input:checked ~ .ac-text {
+  opacity: 1;
+  height: auto;
+}
+
+.ac-label {
+  background: none;
+  font-weight: 600;
+  padding: .5em 2em;
+  margin-bottom: 0;
+}
+
+.ac-label:checked {
+  background: none;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.aknowlagements {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vmax;
+    line-height: 1.5vmax;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-left: 5%;
+    margin-top: 10%;
+    text-align: center;
 }
