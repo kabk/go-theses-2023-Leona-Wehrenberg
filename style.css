@@ -7,7 +7,7 @@ overflow-x: hidden;
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
 .flex-container {
     display: flex;
     flex-direction: inherit;
@@ -145,7 +145,7 @@ overflow-x: hidden;
   }
 }
  
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     .flex-container {
       display: flex;
       flex-direction: inherit;
